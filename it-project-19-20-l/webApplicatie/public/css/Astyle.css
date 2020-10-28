@@ -1,0 +1,1867 @@
+body ::first-letter {
+text-transform: capitalize;
+
+}
+#mapContainer{
+  z-index: 0;
+}
+
+
+
+@media (min-width:1024px) {
+
+  #head{
+    background-image: url(/images/background/header2.jpg);
+}
+/*Elie werkt hier*/
+body {
+display: grid;
+grid-template: 
+'head head head head'
+'main main main aside'
+'map map map aside'
+'map map map aside'
+'map map map aside'
+'map map map aside'
+'map map map aside'
+'map map map aside'
+'map map map aside'
+'footer footer footer footer';
+}
+p {
+  color:black;
+}
+.left > a {
+color: white;
+display: none;
+}
+.right > a {
+color: whitesmoke;
+display: none;
+}
+
+.boven > a  {
+color:white;
+}
+.boven > a:hover {
+font-size: large;
+color: white;
+text-decoration: none;
+cursor: pointer;
+}
+
+.login1 {
+  float: right;
+  margin-right: 1%;
+  background-color: #4169E1;
+  margin-top: 1%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.login {
+float: right;
+margin-right: 1%;
+margin-left: 1%;
+background-color: #4169E1;;
+margin-top: 1%;
+padding: 1%;
+border-radius: 10px;
+}
+
+.info> p {
+  margin-bottom: 10%;
+}
+
+.antwerpeninfo {
+    color: white;
+    background-color: #4169E1;
+    margin-top: 2%;
+    padding: 4%;
+    border-radius: 4px;
+}
+
+.apinfo {
+    color: white;
+    background-color: #4169E1;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding: 4%;
+    border-radius: 4px;
+}
+.sluiten {
+ margin:1%;
+ position: absolute;
+ color: #000;
+ font-size: 35px;
+ font-weight: bold;
+}
+.sluiten:hover,
+.sluiten:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.ContactenWeergaven {
+  display: none; /* Hidden by default */
+  margin-top: 1%;
+  margin-left: 58%;
+  position:absolute; /* Stay in place */
+  z-index: 20000;
+  width: 35%; /* Full width */
+  height: 50%; /* Full height */
+   /* Enable scroll if needed */
+  padding-top: 28px;
+  
+}
+.ContactenWeergaven-content > h2 {
+  color:rgb(111, 111, 111);
+  font-size: 125%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom-style: solid;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 5%;
+}
+.ContactenWeergaven-content{
+  box-shadow: -8px 5px 0 0 hsla(0,0%,69%,.5); /* Sit on top */
+  box-sizing: border-box;
+  border-left-width: 1px;
+  border-style: solid;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 82%; /* Could be more or less, depending on screen size */
+  border-style: solid;
+}
+.makers> address {
+  padding-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+.makers {
+  padding-top: 4%;
+  padding-left: 6%;
+  text-align: center;
+}
+.makers:hover {
+  background-color:  rgb(230, 230, 230);
+  cursor: pointer;
+}
+.info {
+  padding: 4%;
+  text-align: center;
+}
+
+.media> ul  {
+  list-style: none;
+  
+}
+.listmedia {
+  width: 15%;
+  padding: 2%;
+  margin-left: 4%;
+}
+/*leeg ruimte om favorieten toe te voegen.*/
+button {
+  background-color: #0064b4;
+  color: white;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+button, input, input[type=search], select, textarea {
+   -webkit-appearance: checkbox; 
+  font: inherit;
+  margin: 0;
+  outline: none;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+h1{
+color:white;
+text-transform: uppercase;
+}
+h1:hover {
+  color: #0064b4;
+  cursor: pointer;
+}
+h2,h3,h4,h5
+{
+text-align: center;
+color: red;
+text-transform: uppercase;
+}
+header {
+grid-area: head;
+}
+header > h1 {
+margin-top: 1%;
+text-align: center;
+margin-right: 0%;
+}
+a:link {
+  text-decoration: none;
+}
+li:hover {
+cursor: pointer;
+}
+.welkom {
+  margin-top: 4%;
+  width: 100%;
+  text-align: center;
+ }
+header {
+    height: 100%;
+    grid-area: head;
+}
+header > h1 {
+    text-align: center;
+}
+.images {
+  list-style: none;
+  text-align: center;
+  margin-left: 10%;
+}
+main {
+grid-area: main;
+display: grid;
+width: 100%;
+grid-template-columns: auto;
+text-align: center;
+padding: 1%;
+margin-top: 0%;
+}
+.list >button {
+  width: 150px;
+  height: 25px;
+  border-radius: 2px;
+  margin-bottom: 5%;
+  margin-left: 25%;
+  text-align: center;
+  color: white;
+  background-color: #0064b4;
+  position: relative;
+  /*straal km knop weg*/
+ }
+ h3 {
+   margin-top: 5%;
+   padding-top: 7%;
+ }
+ h4{
+   margin-top: 5%;
+ }
+aside{
+  grid-area: aside;
+}
+#myOL {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#myOLStad{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+ul{
+    list-style: none;
+}
+footer {
+grid-area: footer;
+margin-top: 1%;
+border: 1px solid black;
+background-color:rgb(49, 42, 42);
+color: whitesmoke;
+text-decoration: none;
+}
+.contentlijst {
+  display: block;
+  color: black;
+  background-color: #fefefe;
+  margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(219, 210, 210);
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 60%;
+  border-style: solid;
+}
+
+.contentlijst > h3 {
+  margin-top: 2%;
+   padding-top: 0%;
+}
+#mapContainer {
+  grid-area: map;
+  margin: 10px;
+  height: 550px;
+    }
+.onder{
+    grid-area: onder;
+    text-transform: uppercase;
+}
+.onder > p {
+  color: white;
+}
+.onder {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 1%;
+    background-color: black;
+}
+.arrow {
+ width: 30px;
+ margin-left: 5%;
+ border-style: solid;
+ border-radius: 5px;
+ background-color:white;
+}
+
+.arrow > a:link{
+  text-decoration: none;
+  }
+
+.onder > p:hover > a {
+    color: whitesmoke;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    border: none;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+}
+/********************************************************************************************************/
+/*Tablet */
+@media (min-width:786px ) and (max-width:1023px){
+  header{
+  background-image: url(/images/background/header2.jpg);
+  }
+  body { 
+    font-size: 80%; 
+ }
+
+
+    header {
+        background-image: url(/images/background/header2.jpg);
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    h1:hover {
+      color: #4169E1;
+      cursor: pointer;
+    }
+h2,h3,h4,h5
+ {
+     
+     text-align: center;
+     color: red;
+ }
+ hr {
+     display: none;
+ }
+ a:link {
+    text-decoration: none;
+}
+ .upOrdown {
+   
+     margin-right: 50%;
+     text-align: center;
+ }
+
+ button, input, input[type=search], select, textarea {
+  -webkit-appearance: checkbox; 
+ font: inherit;
+ margin: 0;
+ outline: none;
+}
+ 
+
+ #mapContainer{
+     height: 350px;
+     margin-top: 2%;
+     margin-bottom: 4%;
+ }
+ .left {
+     display: none;
+ }
+ .right {
+     display: none;
+ }
+.images {
+    list-style: none;
+    text-align: center;
+    margin-left: 10%;
+   
+}
+info> p {
+  margin-bottom: 2%;
+}
+
+.antwerpeninfo {
+    color: white;
+    background-color: #4169E1;
+    margin-top: 4%;
+    padding: 4%;
+    border-radius: 4px;
+}
+
+.apinfo {
+    color: white;
+    background-color: #4169E1;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding: 4%;
+    border-radius: 4px;
+}
+
+.sluiten {
+  margin:1%;
+  position: absolute;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+ }
+ 
+ .sluiten:hover,
+ .sluiten:focus {
+   color: red;
+   cursor: pointer;
+ }
+ 
+
+.ContactenWeergaven {
+  display: none; /* Hidden by default */
+  margin-left: 58%;
+  position:absolute; /* Stay in place */
+  z-index: 20000;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+   /* Enable scroll if needed */
+  padding-top: 28px;
+  
+}
+
+.ContactenWeergaven-content > h2 {
+  color:rgb(111, 111, 111);
+  font-size: 125%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom-style: solid;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 5%;
+  
+
+ 
+}
+
+.ContactenWeergaven-content{
+  box-shadow: -8px 5px 0 0 hsla(0,0%,69%,.5); /* Sit on top */
+  box-sizing: border-box;
+  border-left-width: 1px;
+  border-style: solid;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.makers> address {
+  padding-left: 4%;
+  margin-right: 4%;
+  
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+
+.makers {
+  padding-top: 4%;
+  padding-left: 6%;
+  
+  
+  
+}
+
+.makers:hover {
+  background-color:  rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.info {
+  padding: 4%;
+  text-align: center;
+}
+
+.media> ul  {
+  list-style: none;
+  
+}
+.listmedia {
+  width: 15%;
+  padding: 2%;
+  margin-left: 4%;
+}
+
+
+
+.login {
+    float: right;
+    margin-right: 1%;
+    background-color: #4169E1;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+.login1 {
+  float: right;
+  margin-right: 1%;
+  background-color: #4169E1;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+
+
+.boven > a  {
+    color:white;
+}
+.boven > a:hover {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.welkom {
+    margin-top: 4%;
+}
+
+
+
+
+
+p {
+    text-align: center;
+    padding: 4%;
+    color:black;
+    
+}
+
+
+.upOrdown >a {
+    color:white;
+}
+
+
+
+
+
+
+.list > h4 {
+  margin-top: 4%;
+  padding-top: 3%;
+  border-top:solid 1px black;
+}
+
+
+#myOL {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  
+  
+}
+
+
+
+ div > li:hover{
+   cursor: pointer;
+   
+}
+
+#myOLStad{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+.zoeken-filter {
+  background-color: #4169E1;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  text-transform: capitalize;
+ 
+}
+
+
+.list >button {
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    text-align: center;
+    color: white;
+    background-color: #4169E1;
+    position: relative;
+    display: none;
+
+}
+
+select {
+    float: left;
+    margin-left: 25%;
+    padding-right: 45px;
+    margin-top: 1%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4169E1 ;
+    color: white;
+    display: none;
+}
+
+select {
+    background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #4169E1, #4169E1);
+  background-position:
+    calc(100% - 20px) calc(0em + 8px),
+    calc(100% - 15px) calc(0em + 8px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+
+
+footer {
+  background-color:rgb(49, 42, 42);
+  color: whitesmoke;
+  margin-bottom: 0%;
+ 
+ 
+}
+
+footer > div > h5 {
+color: white;
+padding-top: 2%;
+}
+
+ .onder{
+  grid-area: onder;
+  background-color: black;
+  margin-top: 2%;
+  
+ }
+ 
+.onder > p {
+  text-align: center;
+  color: white;
+}
+
+
+
+.onder > p>  a:hover {
+  color: white;
+}
+.list > ul {
+  list-style: none;
+  text-align: center;
+}
+
+.icon {
+  
+  width: 40px;
+  border-style: solid;
+  border-color: rgb(49, 42, 42);
+  
+}
+
+.arrow {
+  width: 30px;
+  margin-left: 0%;
+  
+  border-radius: 5px;
+  background-color:white;
+}
+
+.arrow > a:link{
+text-decoration: none;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+ /* Set a style for all buttons */
+
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    border: none;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+
+
+
+
+/***************************************************************************************************************/
+
+/* Mobiel */
+@media (max-width: 785px) {
+    
+  body { 
+    font-size: 80%; 
+ }
+
+
+    header {
+        background-image: url(/images/background/header2.jpg);
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    h1:hover {
+      color: #4169E1;
+      cursor: pointer;
+    }
+h2,h3,h4,h5
+ {
+     
+     text-align: center;
+     color: red;
+ }
+ hr {
+     display: none;
+ }
+ a:link {
+    text-decoration: none;
+}
+ .upOrdown {
+   
+     margin-right: 50%;
+     text-align: center;
+ }
+ 
+
+ #mapContainer{
+     height: 350px;
+     margin-top: 2%;
+     margin-bottom: 4%;
+ }
+ .left {
+     display: none;
+ }
+ .right {
+     display: none;
+ }
+.images {
+    list-style: none;
+    text-align: center;
+    margin-left: 10%;
+   
+}
+
+
+.login {
+    float: right;
+    margin-right: 1%;
+    background-color: #4169E1;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+/*maken van favopopup */
+button {
+  background-color: #0064b4;
+  color: white;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left : 42%;
+  margin-right: 42%;
+  margin-bottom: 2%;
+
+}
+
+
+
+
+
+
+
+
+.boven > a  {
+    color:white;
+}
+.boven > a:hover {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.welkom {
+    margin-top: 4%;
+}
+
+
+
+
+
+p {
+    text-align: center;
+    padding: 4%;
+    color:black;
+    
+}
+
+
+.upOrdown >a {
+    color:white;
+}
+
+
+
+
+
+
+.list > h4 {
+  margin-top: 4%;
+  padding-top: 3%;
+  border-top:solid 1px black;
+}
+
+
+#myOL {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  
+  
+}
+
+
+
+ div > li:hover{
+   cursor: pointer;
+   
+}
+
+#myOLStad{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+.zoeken-filter {
+  background-color: white;
+  text-align: center;
+  
+  font-style: italic;
+  text-transform: capitalize;
+ 
+}
+
+
+.list >button {
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    text-align: center;
+    color: white;
+    background-color: #4169E1;
+    position: relative;
+    display: none;
+
+}
+
+select {
+    float: left;
+    margin-left: 25%;
+    padding-right: 45px;
+    margin-top: 1%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4169E1 ;
+    color: white;
+    display: none;
+}
+
+select {
+    background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #4169E1, #4169E1);
+  background-position:
+    calc(100% - 20px) calc(0em + 8px),
+    calc(100% - 15px) calc(0em + 8px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+
+
+
+footer {
+    background-color:rgb(49, 42, 42);
+    color: whitesmoke;
+    margin-bottom: 0%;
+    
+   
+}
+
+footer > div > h5 {
+  color: white;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.contentlijst {
+  display: block;
+  color: black;
+  background-color: #fefefe;
+  margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(219, 210, 210);
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 60%;
+  border-style: solid;
+
+}
+
+
+.contentlijst > h3 {
+  font-size: 125%;
+  padding-top: 4%;
+  margin-top: 2%;
+   padding-top: 0%;
+}
+
+
+
+button, input, input[type=search], select, textarea {
+  -webkit-appearance: checkbox; 
+ font: inherit;
+ margin: 0;
+ outline: none;
+}
+  
+ 
+
+   
+   .onder{
+    grid-area: onder;
+    background-color: black;
+    margin-top: 2%;
+    
+   }
+   
+.onder > p {
+    text-align: center;
+    color: white;
+}
+
+
+
+.onder > p>  a:hover {
+    color: white;
+}
+.list > ul {
+    list-style: none;
+    text-align: center;
+}
+
+.icon {
+    
+    width: 40px;
+    border-style: solid;
+    border-color: rgb(49, 42, 42);
+    
+}
+
+.arrow {
+    width: 30px;
+    margin-left: 0%;
+    
+    border-radius: 5px;
+    background-color:white;
+}
+
+.arrow > a:link{
+  text-decoration: none;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    border: none;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+}
+}
+ /********************************************************************************************************/
+/* Mobiel */
+@media (max-width: 785px) {
+    
+  body { 
+    font-size: 80%; 
+ }
+
+
+    header {
+        background-image: url(/images/background/header2.jpg);
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    h1:hover {
+      color: #4169E1;
+      cursor: pointer;
+    }
+h2,h3,h4,h5
+ {
+     
+     text-align: center;
+     color: red;
+ }
+ hr {
+     display: none;
+ }
+ a:link {
+    text-decoration: none;
+}
+ .upOrdown {
+   
+     margin-right: 50%;
+     text-align: center;
+ }
+ 
+
+ #mapContainer{
+     height: 350px;
+     margin-top: 2%;
+     margin-bottom: 4%;
+ }
+ .left {
+     display: none;
+ }
+ .right {
+     display: none;
+ }
+.images {
+    list-style: none;
+    text-align: center;
+    margin-left: 10%;
+   
+}
+
+.login1 {
+  float: right;
+  margin-right: 1%;
+  background-color: #4169E1;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+.login {
+    float: left;
+    margin-right: 1%;
+    background-color: #4169E1;
+    margin-top: 1%;
+    padding: 2%;
+}
+
+.info> p {
+  margin-bottom: 2%;
+}
+
+.antwerpeninfo {
+    color: white;
+    background-color: #4169E1;
+    margin-top: 4%;
+    padding: 4%;
+    border-radius: 4px;
+}
+
+.apinfo {
+    color: white;
+    background-color: #4169E1;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding: 4%;
+    border-radius: 4px;
+}
+
+
+.ContactenWeergaven {
+  display: none; /* Hidden by default */
+  margin-left: 0%;
+  position:absolute; /* Stay in place */
+  z-index: 20000;
+  width: 100%; /* Full width */
+  height: 50%; /* Full height */
+   /* Enable scroll if needed */
+  padding-top: 28px;
+  
+}
+
+.ContactenWeergaven-content > h2 {
+  color:rgb(111, 111, 111);
+  font-size: 125%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom-style: solid;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 5%;
+  
+
+ 
+}
+
+.ContactenWeergaven-content{
+  box-shadow: -8px 5px 0 0 hsla(0,0%,69%,.5); /* Sit on top */
+  box-sizing: border-box;
+  border-left-width: 1px;
+  border-style: solid;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.makers> address {
+  padding-left: 4%;
+  margin-right: 4%;
+  
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+
+.makers {
+  
+  padding-top: 4%;
+  padding-left: 6%;
+  
+  
+  
+}
+
+.makers:hover {
+  background-color:  rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.info {
+  padding: 4%;
+  text-align: center;
+}
+
+.media> ul  {
+  list-style: none;
+  
+}
+.listmedia {
+  width: 15%;
+  padding: 2%;
+  margin-left: 4%;
+}
+
+
+.sluiten {
+  margin:1%;
+  position: absolute;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+ }
+ 
+ .sluiten:hover,
+ .sluiten:focus {
+   color: red;
+   cursor: pointer;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+.boven > a  {
+    color:white;
+}
+.boven > a:hover {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.welkom {
+    margin-top: 4%;
+}
+
+#opnieuw {
+  
+    background-color: #0064b4;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 32%;
+    margin-bottom: 2%;
+ 
+}
+
+
+
+
+
+p {
+    text-align: center;
+    padding: 4%;
+    color:black;
+    
+}
+
+
+.upOrdown >a {
+    color:white;
+}
+
+
+
+
+
+
+.list > h4 {
+  margin-top: 4%;
+  padding-top: 3%;
+  border-top:solid 1px black;
+}
+
+
+#myOL {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  
+  
+}
+
+
+
+ div > li:hover{
+   cursor: pointer;
+   
+}
+
+#myOLStad{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+.zoeken-filter {
+  background-color: white;
+  text-align: center;
+  
+  font-style: italic;
+  text-transform: capitalize;
+ 
+}
+
+
+.list >button {
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    text-align: center;
+    color: white;
+    background-color: #4169E1;
+    position: relative;
+    display: none;
+
+}
+
+select {
+    float: left;
+    margin-left: 25%;
+    padding-right: 45px;
+    margin-top: 1%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4169E1 ;
+    color: white;
+    display: none;
+}
+
+select {
+    background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #4169E1, #4169E1);
+  background-position:
+    calc(100% - 20px) calc(0em + 8px),
+    calc(100% - 15px) calc(0em + 8px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+
+
+
+footer {
+    background-color:rgb(49, 42, 42);
+    color: whitesmoke;
+    margin-bottom: 0%;
+    
+   
+}
+
+footer > div > h5 {
+  color: white;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.contentlijst {
+  display: block;
+  color: black;
+  background-color: #fefefe;
+  margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(219, 210, 210);
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 60%;
+  border-style: solid;
+
+}
+
+
+.contentlijst > h3 {
+  font-size: 125%;
+  padding-top: 4%;
+  margin-top: 2%;
+   padding-top: 0%;
+}
+
+
+
+button, input, input[type=search], select, textarea {
+  -webkit-appearance: checkbox; 
+ font: inherit;
+ margin: 0;
+ outline: none;
+}
+  
+ 
+
+   
+   .onder{
+    grid-area: onder;
+    background-color: black;
+    margin-top: 2%;
+    
+   }
+   
+.onder > p {
+    text-align: center;
+    color: white;
+}
+
+
+
+.onder > p>  a:hover {
+    color: white;
+}
+.list > ul {
+    list-style: none;
+    text-align: center;
+}
+
+.icon {
+    
+    width: 40px;
+    border-style: solid;
+    border-color: rgb(49, 42, 42);
+    
+}
+
+.arrow {
+    width: 30px;
+    margin-left: 0%;
+    
+    border-radius: 5px;
+    background-color:white;
+}
+
+.arrow > a:link{
+  text-decoration: none;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    border: none;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTWERPEN</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" /> <!-- routing -->
+    <!--Mapbox css-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"><!-- routing -->
+    <!--Items van de stad-->
+    <link rel="stylesheet" href=" https://cdn.antwerpen.be/core_branding_scss/3.0.3/main.min.css">
+    <link rel="stylesheet" href="./css/Astyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/safari-pinned-tab.svg" color="#cf0039">
+    <meta name="msapplication-TileColor" content="#cf0039">
+    <meta name="theme-color" content="#cf0039">
+    <!-- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+      <!-- Mapbox routing -->
+      <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js" defer></script><!-- routing -->
+      <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js" defer></script><!-- routing -->
+
+      <!-- leaflet js -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <!-- routing machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js" defer></script>
+   
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+
+     <!-- eigen javascript -->
+    <script type="text/javascript" src="./js/Ascript.js" defer></script>
+    <script type="text/javascript" src="./js/map.js" defer></script>
+    <script type="text/javascript" src="./js/favoriet.js" defer></script>
+</head>
+<body>
+    <header id="head">
+        <div class="boven">
+          <a class="login1" onclick="document.getElementById('id01').style.display='block'">Aanmelden</a>
+          <a class="login" id="contactknop">Contacten</a>
+        </div>
+
+        <nav class="navigatieBalk">
+            <ul>
+                <li class="left"><a href="#maps">maps</a></li>
+                <li class="images"><a href="./index.html"><img src="./images/A_logo_RGB_123x123.jpg"></a></li>
+               
+                <li class="right"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto">login</a></li>
+            </ul>
+        </nav>
+
+        <h1>onze groene stad</h1>
+    </header>
+
+    <div id="contact" class="ContactenWeergaven">
+      <div id="scherm" class="ContactenWeergaven-content">
+        <span  onclick="document.getElementById('contact').style.display='none'" class="sluiten" title="Close contact">&times;</span>
+        <h2>Contacteer de leerlingen </h2>
+        <div class="makers">
+          <p>brian teka sala</p>
+        <address>
+          <a href="mailto:s101048@ap.be">Programmeur</a>
+        </address>
+    </div>
+        <div class="makers">
+          <p>Elie Mukua Ambel</p>
+        <address>
+          <a href="mailto:s109059@ap.be">Webdesigner</a>
+        </address>
+        </div>
+        <div class="makers">
+          <p>Ignacio Mena Figueroa</p>
+          <address>
+            <a href="mailto:s090708@ap.be">Webdeveloper/Scrummaster</a>
+          </address>
+        </div>
+        <h2>Meer info over de stad en school</h2>
+        <div class="info">
+          <p>Voor meer informatie over de stad en de api's</p>
+          <a class="antwerpeninfo" href="https://www.antwerpen.be/" target="_blank" rel="noopener noreferrer">Anwterpen</a>
+        </div>
+
+        <div class="info">
+          <p>Voor meer informatie over de school en onze opdracht</p>
+          <a class="apinfo" href="https://www.ap.be/" target="_blank" rel="noopener noreferrer">AP-HogeSchool</a>
+        </div>
+
+        <h2>Volg Ons</h2>
+        <div class="media">
+          <ul >
+            <li >
+              <a href="#"><img class="listmedia" src="icons/facebook.png" alt="facebook" srcset=""></a>
+              <a href="#"><img class="listmedia" src="icons/instagram.png" alt="instagram" srcset=""></a>
+              <a href="#"><img class="listmedia" src="/icons/twitter.jpg" alt="" srcset=""></a>
+              <a href="#"><img class="listmedia" src="/icons/link.png" alt="" srcset=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="id01" class="modal">
+        <form id="mylog" class="modal-content" action="" method="">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./images/boom.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>ID</b>
+            </label>
+            <input type="text" placeholder="Enter een ID_nummer" name="userId" required>
+            <label for="uname"><b>Username</b>
+            </label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b>
+            </label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button id="button" type="button" onclick="Data_username()">Login
+            </button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me </input>
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="myClosewindow()" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+      <main>
+        <article class="welkom" >
+            <h2 id="userName">Welkom</h2>
+            <p>Op deze site vindt u alle informatie terug over onze groene stad Antwerpen.</p> 
+            <p>Als u uw favorieten plaatsen wilt opslaan klik op de checkbox.</p>
+            <button id="opnieuw" type="reset">opnieuw instellen</button>
+        </article>
+    </main>
+    
+    <aside>
+        <article class="list">
+           
+            <div class="boven-info">
+                <h3>Zoeken</h3>
+            </div>
+            <input class="zoeken-filter" onkeyup="mySearch()" id="myInput" type="text" placeholder="Typ hier uw zoekopdracht in ..."><br>
+
+            <h4>buurt-gebruiksgroen</h4>
+                <ol id="myOL">
+                </ol>
+            <h4>stadsdeel-gebruiksgroen</h4>
+                <ol id="myOLStad">
+                </ol>
+        </article>
+    </aside>
+    <div id="mapContainer">
+      <div id="map"></div>
+    </div>
+    <footer id="footer">
+            <div class="contentlijst">
+                    <h3 id=nameuser>meld u aan  om uw favorieten zien</h3>
+                    <ol id=favo>
+                    </ol>
+            </div>
+        <div class="onder">
+            <p>&copy 2020 AP-Antwerpen.be |<a href="https://www.ap.be/privacy-en-cookieverklaring" target="blank">Privacy & gebruiksvoorwaarden</a>
+            <a href="#"><img class="arrow" src="/icons/arrow.png" alt="arrow to go back up to the start of the page" srcset=""></a></p>
+        </div>
+    </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js" loc></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js" ></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js" ></script>
+<script>
+
+let firebaseConfig = {
+  apiKey: "AIzaSyDIkeJc2AcmtMdmttTzq00pzjJpkter7HA",
+  authDomain: "projecti-1c954.firebaseapp.com",
+  databaseURL: "https://projecti-1c954.firebaseio.com",
+  projectId: "projecti-1c954",
+  storageBucket: "projecti-1c954.appspot.com",
+  messagingSenderId: "614389374555",
+  appId: "1:614389374555:web:bdd9c775a53ec53ad3297e",
+  measurementId: "G-2LS25G2DEW"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script>
+</body>
+</html>
